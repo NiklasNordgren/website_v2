@@ -1,0 +1,330 @@
+<div class="header-background">
+  <div class="header-section">
+    <h1 class="header-headline">Niklas Nordgren</h1>
+    <h2 class="sub-header-headline">"Software engineer from Sweden";</h2>
+  </div>
+  <img
+    *ngIf="!(isHandset$ | async)"
+    class="homepage-logo mt-16"
+    src="../assets/logo.svg"
+  />
+</div>
+<h2 class="consolas white-c mt-16 ml-16">
+  Some programming languages, frameworks, libraries and other tools I
+  have experience with:
+</h2>
+<mat-list class="list-horizontal">
+  <mat-list-item matTooltip="android"
+    ><i class="devicon-android-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="androidstudio"
+    ><i class="devicon-androidstudio-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="angular"
+    ><i class="devicon-angularjs-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="angularmaterial"
+    ><i class="devicon-angularmaterial-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="apache"
+    ><i class="devicon-apache-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="archlinux"
+    ><i class="devicon-archlinux-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="atom"
+    ><i class="devicon-atom-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="azure"
+    ><i class="devicon-azure-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="azuredevops"
+    ><i class="devicon-azuredevops-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="azuresqldatabase"
+    ><i class="devicon-azuresqldatabase-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="babel"
+    ><i class="devicon-babel-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="bash"
+    ><i class="devicon-bash-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="bitbucket"
+    ><i class="devicon-bitbucket-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="blazor"
+    ><i class="devicon-blazor-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="blender"
+    ><i class="devicon-blender-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="bootstrap"
+    ><i class="devicon-bootstrap-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="chrome"
+    ><i class="devicon-chrome-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="confluence"
+    ><i class="devicon-confluence-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="embeddedc"
+    ><i class="devicon-embeddedc-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="c"
+    ><i class="devicon-c-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="cplusplus"
+    ><i class="devicon-cplusplus-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="csharp"
+    ><i class="devicon-csharp-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="debian"
+    ><i class="devicon-debian-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="devicon"
+    ><i class="devicon-devicon-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="docker"
+    ><i class="devicon-docker-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="dotnetcore"
+    ><i class="devicon-dotnetcore-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="dotnet"
+    ><i class="devicon-dot-net-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="eclipse"
+    ><i class="devicon-eclipse-plain-wordmark devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="elasticsearch"
+    ><i class="devicon-elasticsearch-plain-wordmark devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="emacs"
+    ><i class="devicon-emacs-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="ember"
+    ><i class="devicon-ember-original-wordmark devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="eslint"
+    ><i class="devicon-eslint-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="express"
+    ><i class="devicon-express-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="facebook"
+    ><i class="devicon-facebook-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="filezilla"
+    ><i class="devicon-filezilla-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="firebase"
+    ><i class="devicon-firebase-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="firefox"
+    ><i class="devicon-firefox-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="gimp"
+    ><i class="devicon-gimp-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="git"
+    ><i class="devicon-git-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="github"
+    ><i class="devicon-github-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="githubactions">
+    <i class="devicon-githubactions-plain devicon"></i>
+  </mat-list-item>
+  <mat-list-item matTooltip="gitlab"
+    ><i class="devicon-gitlab-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="google"
+    ><i class="devicon-google-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="gradle"
+    ><i class="devicon-gradle-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="grafana"
+    ><i class="devicon-grafana-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="intellij"
+    ><i class="devicon-intellij-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="ionic"
+    ><i class="devicon-ionic-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="java"
+    ><i class="devicon-java-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="javascript"
+    ><i class="devicon-javascript-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="jetbrains"
+    ><i class="devicon-jetbrains-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="jira"
+    ><i class="devicon-jira-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="jquery"
+    ><i class="devicon-jquery-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="json"
+    ><i class="devicon-json-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="junit"
+    ><i class="devicon-junit-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="jupyter"
+    ><i class="devicon-jupyter-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="kibana"
+    ><i class="devicon-kibana-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="kubernetes"
+    ><i class="devicon-kubernetes-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="linux"
+    ><i class="devicon-linux-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="mariadb"
+    ><i class="devicon-mariadb-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="markdown"
+    ><i class="devicon-markdown-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="materializecss"
+    ><i class="devicon-materializecss-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="matlab"
+    ><i class="devicon-matlab-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="maven"
+    ><i class="devicon-maven-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="microsoftsqlserver"
+    ><i class="devicon-microsoftsqlserver-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="mongodb"
+    ><i class="devicon-mongodb-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="mysql"
+    ><i class="devicon-mysql-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="nano"
+    ><i class="devicon-nano-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="nginx"
+    ><i class="devicon-nginx-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="nodejs"
+    ><i class="devicon-nodejs-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="npm"
+    ><i class="devicon-npm-original-wordmark devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="nuget"
+    ><i class="devicon-nuget-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="ocaml"
+    ><i class="devicon-ocaml-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="opengl"
+    ><i class="devicon-opengl-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="oracle"
+    ><i class="devicon-oracle-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="php"
+    ><i class="devicon-php-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="postgresql"
+    ><i class="devicon-postgresql-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="postman"
+    ><i class="devicon-postman-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="powershell"
+    ><i class="devicon-powershell-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="putty"
+    ><i class="devicon-putty-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="python"
+    ><i class="devicon-python-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="rabbitmq"
+    ><i class="devicon-rabbitmq-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="react"
+    ><i class="devicon-react-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="rxjs"
+    ><i class="devicon-rxjs-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="sass"
+    ><i class="devicon-sass-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="spring"
+    ><i class="devicon-spring-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="microsoftsqlserver"
+    ><i class="devicon-microsoftsqlserver-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="ssh"
+    ><i class="devicon-ssh-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="stackoverflow"
+    ><i class="devicon-stackoverflow-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="storybook"
+    ><i class="devicon-storybook-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="subversion"
+    ><i class="devicon-subversion-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="swagger"
+    ><i class="devicon-swagger-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="threejs"
+    ><i class="devicon-threejs-original devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="tomcat"
+    ><i class="devicon-tomcat-line devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="trello"
+    ><i class="devicon-trello-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="typescript"
+    ><i class="devicon-typescript-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="ubuntu"
+    ><i class="devicon-ubuntu-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="unifiedmodelinglanguage"
+    ><i class="devicon-unifiedmodelinglanguage-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="unity"
+    ><i class="devicon-unity-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="visualstudio"
+    ><i class="devicon-visualstudio-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="vscode"
+    ><i class="devicon-vscode-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="vuejs"
+    ><i class="devicon-vuejs-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="wordpress"
+    ><i class="devicon-wordpress-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="xml"
+    ><i class="devicon-xml-plain devicon"></i
+  ></mat-list-item>
+  <mat-list-item matTooltip="yaml"
+    ><i class="devicon-yaml-plain devicon"></i
+  ></mat-list-item>
+</mat-list>
+<mat-divider class="ml-16 mr-16 mb-16"></mat-divider>

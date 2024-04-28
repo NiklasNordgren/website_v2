@@ -1,0 +1,41 @@
+::ng-deep * {
+  font-family: Consolas;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.white-c {
+  color: #fff !important;
+}
+
+.custom-button {
+  color: #000;
+  background-color: #a5a5de;
+}
+
+::ng-deep .mat-line {
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
+
+::ng-deep .mat-list .mat-list-item {
+  height: initial !important;
+}
+
+.mat-expansion-panel-header-title {
+  font-size: 20px;
+}

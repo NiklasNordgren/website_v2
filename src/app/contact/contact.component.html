@@ -1,0 +1,69 @@
+<h1 class="mt-16 ml-16 white-c consolas">Contact</h1>
+<mat-divider class="ml-16 mr-16 mb-16"></mat-divider>
+<h2 class="mt-16 ml-16 mb-0 white-c consolas">{{ emailAddress }}</h2>
+<div class="form-panel ml-16 mt-16">
+  <form
+    class="form"
+    #formDirective="ngForm"
+    [formGroup]="contactFormGroup"
+    (ngSubmit)="sendMail($event, formDirective)"
+  >
+    <mat-form-field class="form-full-width">
+      <mat-label>Email</mat-label>
+      <input
+        name="from_name"
+        class="form-input"
+        matInput
+        [formControl]="emailFormControl"
+        autocomplete="off"
+        placeholder="Ex. example@email.com"
+      />
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form-full-width margin-top-3">
+      <mat-label>Message</mat-label>
+      <textarea
+        name="message"
+        class="form-text-area form-input"
+        matInput
+        [formControl]="textFieldFormControl"
+        placeholder="Type message here"
+      ></textarea>
+      <mat-error *ngIf="textFieldFormControl.hasError('required')">
+        Message is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <div class="mt-8">
+      <button
+        mat-raised-button
+        class="custom-button"
+        color="primary"
+        (click)="resetForm(formDirective)"
+        type="button"
+      >
+        Reset
+      </button>
+      <button
+        [disabled]="!contactFormGroup.valid"
+        class="ml-16"
+        [ngClass]="{ 'custom-button': contactFormGroup.valid }"
+        color="primary"
+        type="submit"
+        mat-raised-button
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</div>
