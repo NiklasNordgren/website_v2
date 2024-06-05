@@ -4,7 +4,10 @@ import { CommonModule } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipModule } from '@angular/material/tooltip';
+import {
+  MAT_TOOLTIP_DEFAULT_OPTIONS,
+  MatTooltipModule,
+} from '@angular/material/tooltip';
 import { Observable, map } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
@@ -12,7 +15,10 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   selector: 'app-home',
   standalone: true,
   providers: [
-    { provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: { touchGestures: 'off' } }
+    {
+      provide: MAT_TOOLTIP_DEFAULT_OPTIONS,
+      useValue: { touchGestures: 'off' },
+    },
   ],
   imports: [
     CommonModule,
@@ -26,7 +32,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 })
 export class HomeComponent {
   isHandset$: Observable<boolean> = this.breakpointObserver
-    .observe(Breakpoints.Handset)
+    .observe(Breakpoints.HandsetPortrait)
     .pipe(map((result) => result.matches));
 
   constructor(private breakpointObserver: BreakpointObserver) {}
